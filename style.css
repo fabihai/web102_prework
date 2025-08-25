@@ -5,11 +5,15 @@ body {
     background-color: #758190;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 #tentacles {
     width: 50px;
 }
 
-.header {
+.header-box {
     display: flex;
     background-color: lightblue;
     padding: 1%;
@@ -17,10 +21,41 @@ body {
     margin-left: -10px;
     margin-right: -10px;
     margin-top: -10px;
+    /* position: sticky;
+    top: 0; */
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.navbar {
+    padding: 15px 0;
+    position: sticky;
+    top: 0;
+}
+
+.navbar ul {
+  list-style: none;
+  display: flex;
+  gap: 40px;
+}
+
+.navbar li a {
+  text-decoration: none;
+  color: #000000;
+  font-weight: 600;
 }
 
 .stats-container {
     display: flex;
+    cursor: pointer;
+}
+
+.stats-container:hover {
+    box-shadow: 0 0 30px lightblue;
 }
 
 .stats-card {
